@@ -36,7 +36,7 @@ a child element of the `open-map` element.
 @status alpha
 @homepage https://ruben96.github.io/open-map/components/open-map/
 -->
-<polymer-element name="open-marker" attributes="icon title">
+<polymer-element name="open-marker" attributes="icon label">
   <template>
     <link
       href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
@@ -73,11 +73,11 @@ a child element of the `open-map` element.
     /**
       * A Mapbox marker object
       *
-      * @attribute title
+      * @attribute label
       * @type String
       * @default null
       */
-      title: '',
+      label: '',
 
       publish:{
       /**
@@ -126,8 +126,8 @@ a child element of the `open-map` element.
 
           this.marker = L.marker( [ this.latitude, this.longitude ], {
             draggable: !!this.getAttribute("draggable"),
-            title: this.title,
-            alt: this.title,
+            title: this.label,
+            alt: this.label,
             icon: this.createIcon()
           } ).addTo( this.map );
 
