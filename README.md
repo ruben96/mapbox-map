@@ -43,12 +43,12 @@ $ bower install open-map#master
 		latitude="38.908847"
 		mapID="villeda.c4c63d13"
 		longitude="1.433900">
-		<open-marker title="School Bus" latitude="38.909847"
+		<open-marker label="School Bus" latitude="38.909847"
 			longitude="1.435900"
 			icon="{'icon':'bus', 'markerColor':'#ff0000'}"
 			draggable="true">
 		</open-marker>
-		<open-marker id="me" title="Me"
+		<open-marker id="me" label="Me"
 				icon="{'icon':'pitch', 'markerColor':'#000'}" >
 		</open-marker>
 	</open-map>
@@ -111,7 +111,7 @@ Attributes
 | `latitude`      | Float   | null               |
 | `longitude`     | Float   | null               |
 | `icon`          | Object  | null               |
-| `title`         | String  | null               |
+| `label`         | String  | null               |
 
 
 ##### Params for Icon
